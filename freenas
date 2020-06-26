@@ -10,7 +10,5 @@ sanboot --no-describe -k http://download.freenas.org/11.3/STABLE/U3.2/x64/FreeNA
 #############
 #!ipxe
 
-kernel http://f.tvoy-dom.ru/memdisk
 initrd http://f.tvoy-dom.ru/freenas.iso
-imgargs memdisk iso raw
-boot
+chain http://f.tvoy-dom.ru/memdisk harddisk raw
