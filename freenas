@@ -4,3 +4,13 @@ sanboot --no-describe -k http://download.freenas.org/11.3/STABLE/U3.2/x64/FreeNA
 
 
 # cd9660:/dev/iso9660/FreeNAS
+
+
+
+#############
+#!ipxe
+
+kernel http://tvoy-dom.ru/memdisk
+initrd http://tvoy-dom.ru/freenas.iso
+imgargs memdisk iso raw
+boot
